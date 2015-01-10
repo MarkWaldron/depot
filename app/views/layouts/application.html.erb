@@ -14,6 +14,7 @@
 	<div id="columns">
 		<div id="side">
 			<ul>
+				<li><p><%= pluralize session[:counter], 'time' %></p></li>
 				<li><p><%= l @date_loaded, :format => :short %></p></li>
 				<li><a href="http://www....">Home</a></li>
 				<li><a href="http://www.../faq">Questions</a></li>

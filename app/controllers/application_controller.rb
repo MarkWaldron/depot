@@ -4,4 +4,10 @@ class ApplicationController < ActionController::Base
   def set_date
   	@date_loaded = Time.now
   end
+  
+  def reset_session_counter
+  	if not session[:counter].nil?
+  		session[:counter] = 0
+  	end
+  end
 end
